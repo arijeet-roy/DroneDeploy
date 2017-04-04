@@ -1,0 +1,252 @@
+/* ******************************** */
+/* Optional DroneDeploy App Styling */
+/* ******************************** */
+.row {
+  padding-top: 4px;
+}
+.row:hover {
+  background: rgba(158,158,158,.2);
+  border-radius: 3px;
+}
+.col-25 {
+  text-align: center;
+}
+.col-75 {
+  padding: 8px 0 ;
+  color: rgba(0, 0, 0, 0.75);
+}
+.icon {
+  height: 36px;
+  width: 36px;
+  text-align: center;
+}
+#generate_text {
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.75);
+}
+#generate_pdf_view {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.spinner {
+  animation: rotator 1s linear infinite;
+  margin: auto;
+   }
+
+
+@keyframes rotator {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(380deg); } }
+.path {
+  stroke-dasharray: 187;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  animation: dash 1s ease-in-out infinite, colors 3s ease-in-out infinite; }
+
+@keyframes colors {
+  0% {
+    stroke: #4285F4; }
+  25% {
+    stroke: #DE3E35; }
+  50% {
+    stroke: #F7C223; }
+  75% {
+    stroke: #1B9A59; }
+  100% {
+    stroke: #4285F4; } }
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 187; }
+  50% {
+    stroke-dashoffset: 46.75;
+    transform: rotate(135deg); }
+  100% {
+    stroke-dashoffset: 187;
+    transform: rotate(450deg); } }
+
+/* *********** */
+/* Class Names */
+/* *********** */
+.error{
+  color: #FF4081;
+}
+
+.accent{
+  color: #039be5;
+}
+
+.annotation-title{
+  padding: 16px 20px 0px 0px;
+    font-family: 'Lato', sans-serif;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 14px;
+}
+
+div.pdf{
+  margin: 1px;
+    float: left;
+    width: 228px;
+}
+
+div.pdf1{
+  margin-top: 20px;
+}
+
+.payment{
+      font-family: 'Lato', sans-serif;
+      padding: 0px 50px 16px 0px;
+      margin-right: -32px;
+}
+
+/* *********** */
+/* Tag Styling */
+/* *********** */
+body {
+  margin: 5px 0;
+  font-family: 'Lato', sans-serif;
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #039be5;
+}
+
+.button-wrap {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  font-size: 14px;
+  color: #039be5;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  min-width: 120px;
+  margin: auto;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: rgba(158,158,158,0.2);
+}
+
+.button.primary {
+  color: white;
+  background-color: #039be5;
+}
+
+.button.primary:hover {
+  color: white;
+  background-color: #0175ad;
+}
+.button.primary:active {
+  color: white;
+  background-color: #039be5;
+}
+
+input{
+  font: inherit;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  padding-bottom: 4px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.38);
+}
+input:focus{
+  border-bottom: 2px solid #2196F3;
+}
+
+/* Changes the placeholder color */
+::-webkit-input-placeholder { color: rgba(0, 0, 0, 0.38); }
+:-moz-placeholder { color: rgba(0, 0, 0, 0.38); }
+::-moz-placeholder { color: rgba(0, 0, 0, 0.38); }
+:-ms-input-placeholder { color: rgba(0, 0, 0, 0.38); }
+
+/* ***** */
+/* Fonts */
+/* ****** */
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/8qcEw_nrk_5HEcCpYdJu8BTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/8qcEw_nrk_5HEcCpYdJu8BTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+[class*='col-'] {
+  float: left;
+}
+.col-25 {
+  width: 25%;
+}
+.col-50 {
+  width: 50%;
+}
+.col-75 {
+  width: 75%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row {
+  padding-bottom: 5px
+}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+[class*='col-'] {
+  padding-right: 4px;
+}
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+/* ************************** */
+/* End of DroneDeploy Styling */
+/* ************************** */
